@@ -37,3 +37,10 @@ ALTER TABLE professores
     ADD CONSTRAINT fk_professores_cursos1
     FOREIGN KEY(curso_id) REFERENCES cursos(id);
 ```
+```sql
+INSERT INTO `cursos` (`id`, `titulo`, `cargahoraria`, `professor_id`) VALUES (NULL, 'Front-End', '40', NULL);
+
+INSERT INTO `professores` (`id`, `nome`, `cargahoraria`, `curso_id`) VALUES (NULL, 'Lemmy Kilmister', 'desing', '4');
+
+INSERT INTO `alunos` (`id`, `nome`, `datanascimento`, `primeiranota`, `segundanota`, `curso_id`) VALUES (NULL, 'Rafael', '1994-10-11', '7', '9', '5')
+```
