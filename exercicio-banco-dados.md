@@ -44,3 +44,11 @@ INSERT INTO `professores` (`id`, `nome`, `cargahoraria`, `curso_id`) VALUES (NUL
 
 INSERT INTO `alunos` (`id`, `nome`, `datanascimento`, `primeiranota`, `segundanota`, `curso_id`) VALUES (NULL, 'Rafael', '1994-10-11', '7', '9', '5')
 ```
+```sql
+1 - SELECT * FROM alunos WHERE datanascimento < 2009-12-31;
+
+2 - SELECT nome, primeiranota, segundanota, (primeiranota + segundanota)/2 AS 'média' FROM alunos;
+
+3- 
+
+```
